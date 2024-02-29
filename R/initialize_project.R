@@ -47,6 +47,7 @@ initialize_project = function(
     'code/experiments',
     'code/functions',
     'code/reports',
+    'code/requests',
     'code/scripts',
     'data',
     'data/crosswalks',
@@ -54,6 +55,7 @@ initialize_project = function(
     'data/processed',
     'data/raw',
     'data/requests',
+    'data/tests',
     'references',
     'references/instruments'
   )
