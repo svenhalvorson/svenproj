@@ -27,6 +27,17 @@ stash = function(
 
   if(predicate_fun()){
 
+    if(!dir.exists()){
+      dir.create(
+          here::here(
+        'data',
+        data_dir,
+        df_name,
+        paste0(df_name, '_', extract_date, '.', format)
+      )
+    )
+    }
+
     extract_date = format(Sys.Date(), '%Y%m%d')
 
     write_fun(
